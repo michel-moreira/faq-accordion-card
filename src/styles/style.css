@@ -1,0 +1,141 @@
+body {
+  font-size: 1.2rem;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--soft-blue);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* ========================== */
+
+.container-faq {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 20px 1px var(--very-dark-grayish-blue);
+  width: 920px;
+}
+.container-faq::before {
+  content: "";
+  width: 30%;
+  height: 30%;
+  display: block;
+  background: url(/src/images/illustration-box-desktop.svg) no-repeat;
+  position: absolute;
+  left: -10%;
+  bottom: 30%;
+  z-index: 1;
+}
+
+/* =========================== */
+
+.container-faq .image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem 2rem 0;
+  overflow: auto;
+  width: 50%;
+  position: relative;
+  background: url(/src/images/bg-pattern-desktop.svg) no-repeat left 130% center;
+}
+.container-faq .image-container picture .image-faq {
+  position: absolute;
+  transform: translate(-18%, -50%);
+}
+
+/* =============================*/
+
+.container-faq .faq {
+  padding: 6rem 11rem 5rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 50%;
+}
+.container-faq .faq h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+  margin-bottom: 2rem;
+}
+
+/* -------------------------- */
+
+.container-faq .faq .faq-list li {
+  border-bottom: 1px solid var(--light-grayish-blue);
+  margin: 1rem auto;
+  padding-bottom: 2rem;
+}
+
+.container-faq .faq .faq-list li details summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--very-dark-grayish-blue);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+@media (min-width: 931px) {
+  .container-faq .faq .faq-list li details summary:hover {
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+  }
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.container-faq .faq .faq-list li details p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+/* -------------------------- */
+
+.container-faq .faq .faq-list li details summary::-webkit-details-marker {
+  display: none;
+}
+.container-faq .faq .faq-list li details summary::after {
+  content: url(/src/images/icon-arrow-down.svg);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.container-faq .faq .faq-list li details[open] summary::after {
+  content: url(/src/images/icon-arrow-down.svg);
+  transition: 0.4s ease-in-out;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.container-faq .faq .faq-list li details[open] summary {
+  margin-bottom: 0.5em;
+  transition: 0.4s ease;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+}
+
+/* ########################## */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--light-grayish-blue);
+  margin-bottom: 1rem;
+}
+.attribution a {
+  color: var(--very-dark-desaturated-blue);
+}

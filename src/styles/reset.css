@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img,
+video,
+audio {
+  display: block;
+  max-width: 100%;
+}
