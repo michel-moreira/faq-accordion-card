@@ -67,7 +67,7 @@ main {
   flex-direction: column;
   width: 50%;
 }
-.container-faq .faq h2 {
+.container-faq .faq h1 {
   font-size: 3.2rem;
   font-weight: 700;
   color: var(--very-dark-grayish-blue);
