@@ -34,7 +34,7 @@ main {
   width: 30%;
   height: 30%;
   display: block;
-  background: url(/src/images/illustration-box-desktop.svg) no-repeat;
+  background: url(../images/illustration-box-desktop.svg) no-repeat;
   position: absolute;
   left: -10%;
   bottom: 30%;
@@ -51,7 +51,7 @@ main {
   overflow: auto;
   width: 50%;
   position: relative;
-  background: url(/src/images/bg-pattern-desktop.svg) no-repeat left 130% center;
+  background: url(../src/images/bg-pattern-desktop.svg) no-repeat left 130% center;
 }
 .container-faq .image-container picture .image-faq {
   position: absolute;
@@ -112,12 +112,12 @@ main {
   display: none;
 }
 .container-faq .faq .faq-list li details summary::after {
-  content: url(/src/images/icon-arrow-down.svg);
+  content: url(../src/images/icon-arrow-down.svg);
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
 .container-faq .faq .faq-list li details[open] summary::after {
-  content: url(/src/images/icon-arrow-down.svg);
+  content: url(../src/images/icon-arrow-down.svg);
   transition: 0.4s ease-in-out;
   transform: rotate(180deg);
   cursor: pointer;
