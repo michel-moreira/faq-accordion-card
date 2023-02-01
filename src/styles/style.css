@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--soft-blue);
+  background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
 main {
@@ -26,6 +26,7 @@ main {
   margin: 2rem;
   border-radius: 2rem;
   box-shadow: 0px 10px 20px 1px var(--very-dark-grayish-blue);
+  padding: 6rem 0;
   width: 920px;
 }
 .container-faq::before {
@@ -60,13 +61,13 @@ main {
 /* =============================*/
 
 .container-faq .faq {
-  padding: 6rem 11rem 5rem 2rem;
+  padding: 0 11rem 5rem 2rem;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   width: 50%;
 }
-.container-faq .faq h1 {
+.container-faq .faq h2 {
   font-size: 3.2rem;
   font-weight: 700;
   color: var(--very-dark-grayish-blue);
